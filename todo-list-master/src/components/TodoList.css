@@ -1,0 +1,74 @@
+.list {
+    align-items: start;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 35px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 40px;
+    height: 350px;
+}
+
+.list-item {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-000);
+}
+
+.list-item:hover p {
+    cursor: pointer;
+    color: blue;
+}
+
+.list-item:hover .circle {
+    border-color: rgb(183, 183, 196);
+}
+
+.item-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+}
+
+.circle {
+    border: 1px solid var(--color-000);
+    opacity: 0.5;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.select {
+    width: 32px;
+    height: 32px;
+}
+
+.list_icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 27px;
+}
+
+.list_icons > *:hover {
+    transform: scale(1.1);
+}
+
+.edit_item {
+    color: green;
+    cursor: pointer;
+}
+
+.delete_item {
+    cursor: pointer;
+    color: red;
+}
+
+.delete-btn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}

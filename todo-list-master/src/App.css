@@ -1,0 +1,108 @@
+.App {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--body-color);
+}
+.App_container {
+    background: var(--bg-fff);
+    border-radius: 32px;
+    box-shadow: 0 0 4px rgba(0, 11, 33, 0.15);
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 79px 20px 41px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.dark_ligth_mode {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 32px;
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    font-size: 28px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.dark_icon {
+    cursor: pointer;
+    transform: translateX(-25px) rotate(-180deg);
+    transition: all 300ms;
+    color: #eee;
+}
+.dark_icon-active {
+    transform: translateX(4px) rotate(0deg);
+}
+
+.light_icon {
+    cursor: pointer;
+    transform: translateX(30px) rotate(270deg);
+    transition: all 300ms;
+}
+.light_icon-active {
+    transform: translateX(-22px) rotate(0deg);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.title {
+    color: var(--color-11175e);
+    font-family: Rubik, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 57px;
+    margin-bottom: 32px;
+    user-select: none;
+}
+
+hr {
+    background: #eee;
+    border: 1px solid #eee;
+    margin: 50px 0 24px 0;
+}
+
+footer {
+    -webkit-font-feature-settings: "liga" off;
+    font-feature-settings: "liga" off;
+    align-items: center;
+    color: #b1bacb;
+    display: flex;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: space-between;
+    letter-spacing: 0.01em;
+    line-height: 110%;
+    width: 100%;
+}
+
+.clear {
+    background: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+}
+
+.warning {
+    color: red;
+    position: absolute;
+    /* bottom: -5px; */
+}
